@@ -52,7 +52,7 @@ student-api-jwt/
 
 ### **Output** ###
 
-![jwt-auth-api](Output/Server.png)
+![jwt-auth-api](Output/server.png)
 
 
 ---
