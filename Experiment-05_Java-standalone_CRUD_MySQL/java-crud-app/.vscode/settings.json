@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin"
+}
+=======
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin"
+}
+>>>>>>> 10b5e9fbd590dd7b6eef73f6e5e409277d3db61f

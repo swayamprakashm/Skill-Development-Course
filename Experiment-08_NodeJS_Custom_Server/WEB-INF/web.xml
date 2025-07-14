@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>StudentAPI</servlet-name>
+        <servlet-class>StudentAPI</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentAPI</servlet-name>
+        <url-pattern>/StudentAPI</url-pattern>
+    </servlet-mapping>
+</web-app>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>StudentAPI</servlet-name>
+        <servlet-class>StudentAPI</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentAPI</servlet-name>
+        <url-pattern>/StudentAPI</url-pattern>
+    </servlet-mapping>
+</web-app>
+>>>>>>> 10b5e9fbd590dd7b6eef73f6e5e409277d3db61f

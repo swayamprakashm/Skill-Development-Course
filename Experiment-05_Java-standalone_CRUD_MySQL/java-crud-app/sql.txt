@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+CREATE DATABASE shoppingdb;
+
+USE shoppingdb;
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DOUBLE NOT NULL,
+    quantity INT NOT NULL
+);
+=======
+CREATE DATABASE shoppingdb;
+
+USE shoppingdb;
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DOUBLE NOT NULL,
+    quantity INT NOT NULL
+);
+>>>>>>> 10b5e9fbd590dd7b6eef73f6e5e409277d3db61f

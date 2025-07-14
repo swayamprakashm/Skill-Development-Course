@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<h2>Login</h2>
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <button type="submit">Login</button>
+</form>
+{% endblock %}
+=======
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<h2>Login</h2>
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <button type="submit">Login</button>
+</form>
+{% endblock %}
+>>>>>>> 10b5e9fbd590dd7b6eef73f6e5e409277d3db61f

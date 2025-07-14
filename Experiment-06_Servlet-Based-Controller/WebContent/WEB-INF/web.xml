@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+<web-app>
+    <servlet>
+        <servlet-name>ShoppingController</servlet-name>
+        <servlet-class>ShoppingController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShoppingController</servlet-name>
+        <url-pattern>/ShoppingController</url-pattern>
+    </servlet-mapping>
+</web-app>
+
+=======
+<web-app>
+    <servlet>
+        <servlet-name>ShoppingController</servlet-name>
+        <servlet-class>ShoppingController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShoppingController</servlet-name>
+        <url-pattern>/ShoppingController</url-pattern>
+    </servlet-mapping>
+</web-app>
+
+>>>>>>> 10b5e9fbd590dd7b6eef73f6e5e409277d3db61f
