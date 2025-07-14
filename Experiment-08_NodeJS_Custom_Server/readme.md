@@ -1,63 +1,62 @@
 ---
 
-## **PROGRAM 7 – Session Management in Shopping Cart Web Application**
+## **PROGRAM 8 – Custom Server and Core Modules in Node.js**
 
 ---
 
 ### **AIM**
 
-To implement **session tracking** in a shopping cart web application using **HTTP Sessions** in **Java Servlets**.
+To create a custom **HTTP server** using **Node.js** and explore core built-in modules such as `os`, `path`, and `events`. 
 
 ---
 
 ### **DESCRIPTION**
 
-This experiment demonstrates how to maintain **user-specific data** (such as a shopping cart) using **HTTP sessions** in Java Servlets. When a user adds products to the cart, the servlet tracks the session and stores cart data in memory without requiring a database write for every interaction.
+This experiment demonstrates how to build a simple HTTP server using **Node.js** without any external frameworks. It also showcases how to interact with **system-level information**, **file paths**, and **custom events** using Node.js core modules.
 
-This implementation improves performance and user experience by **preserving state between page requests**.
-
-The solution uses:
-
-* **Java Servlets** for backend processing
-* **HTML/CSS** for the frontend interface
-* The built-in **session management API** provided by the Servlet framework
+The solution uses Node.js for server-side programming and the built-in `http`, `os`, `path`, and `events` modules to explore their functionalities in a backend environment. This helps in understanding how Node.js handles **server creation** and **system-level operations** using its **standard library**.
 
 ---
 
 ### **PROJECT STRUCTURE**
 
 ```
-shopping-cart-session/
+node-server-demo/
 │
-├── src/
-│   └── servlets/
-│       ├── ProductServlet.java         # Lists products
-│       └── CartServlet.java            # Handles add-to-cart with session
-│
-├── WebContent/
-│   ├── index.html                      # Welcome page
-│   ├── catalog.html                    # Displays product list with add buttons
-│   ├── cart.html                       # Displays cart contents from session
-│   └── WEB-INF/
-│       ├── web.xml                     # Servlet and session config
-│       └── lib/
-│           └── mysql-connector-j-9.3.0.jar
-│
-├── bin/                                # Compiled .class files
-├── lib/
-│   └── javax.servlet-api-4.0.1.jar
-├── README.md                           # Project documentation
+├── server.js        # Creates a basic HTTP server
+├── osInfo.js        # Displays OS information using 'os' module
+├── pathDemo.js      # Demonstrates path operations using 'path' module
+├── eventDemo.js     # Emits and listens for events using 'events' module
+├── README.md        # Project documentation
 ```
 
 ---
 
 ### **Output**
 
-Product Catalog page:
-![Experiment-07_Session-Management](Output/productcatalog.png)
+Event Demo page:
+![Experiment-08_NodeJS_Custom_Server](Output/evenDemo.png)
 
-Welcome page:
-![Experiment-07_Session-Management](Output/welcome.png)
+OS Info page:
+![Experiment-08_NodeJS_Custom_Server](Output/osInfo.png)
+
+Path Demo page:
+![Experiment-08_NodeJS_Custom_Server](Output/pathDemo.png)
+
+Server page:
+![Experiment-08_NodeJS_Custom_Server](Output/server.png)
+
+---
+
+### **MODULES USED**
+
+• `http` – To create the web server
+
+• `os` – To fetch system-related data such as platform, memory, and CPU info
+
+• `path` – To handle file and directory paths
+
+• `events` – To handle event-driven architecture by emitting and responding to events
 
 ---
 
@@ -65,58 +64,67 @@ Welcome page:
 
 #### **PREREQUISITES**
 
-• Java JDK
+• Node.js installed on your system
 
-• Apache Tomcat
-
-• MySQL
-
-• VS Code with Java Extensions
-
-• Servlet API (`javax.servlet-api-4.0.1.jar`)
+• Visual Studio Code (VS Code) or any preferred IDE
 
 ---
 
 ### **STEPS TO RUN THE PROJECT**
 
-1. **Add Required JARs to `lib/`:**
-
-   * `mysql-connector-j-9.3.0.jar`
-   * `javax.servlet-api-4.0.1.jar`
-
-2. **Compile Servlets:**
+1. Open terminal and navigate to the project directory:
 
    ```bash
-   javac -cp "lib/*" -d bin src/servlets/ProductServlet.java src/servlets/CartServlet.java
+   cd node-server-demo
    ```
 
-3. **Deploy to Tomcat:**
+2. Open the project in VS Code:
 
-   * Copy `WebContent/` into `tomcat/webapps/shopping-cart-session/`
-   * Copy compiled `bin/` classes to `WEB-INF/classes/`
-
-4. **Start Tomcat Server**
-
-5. **Visit in Browser:**
-
+   ```bash
+   code .
    ```
-   http://localhost:8080/shopping-cart-session/index.html
-   ```
+
+3. Run each file individually to test different modules:
+
+* **Start the HTTP server:**
+
+  ```bash
+  node server.js
+  ```
+
+  Then open your browser and visit:
+  `http://localhost:3000`
+
+* **Run OS module demo:**
+
+  ```bash
+  node osInfo.js
+  ```
+
+* **Run Path module demo:**
+
+  ```bash
+  node pathDemo.js
+  ```
+
+* **Run Events module demo:**
+
+  ```bash
+  node eventDemo.js
+  ```
 
 ---
 
-### **DATABASE SETUP**
+### **OUTPUT EXAMPLES**
 
-**Database:** `shopping_cart`
-**Table:** `products`
+• `server.js` – Displays a web page with:
+`"Hello from Node.js custom server!"`
 
-```sql
-CREATE TABLE products (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(100),
-  price DECIMAL(10,2)
-);
-```
+• `osInfo.js` – Outputs platform, memory, uptime, and user info
+
+• `pathDemo.js` – Shows file name, extension, directory, and path joining
+
+• `eventDemo.js` – Logs `"Hello, Alice!"` using a custom event
 
 ---
 
